@@ -11,9 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150928190025) do
+ActiveRecord::Schema.define(version: 20150928191659) do
 
-  create_table "frontpage_frontpages", force: :cascade do |t|
+  create_table "articles", force: :cascade do |t|
     t.string   "title"
     t.string   "tweet_1"
     t.string   "tweet_2"
