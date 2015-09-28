@@ -9,6 +9,7 @@ module Frontpage
     end
 
     def index
+      binding.pry
       @articles = SessionsController::Article.all
     end
   end

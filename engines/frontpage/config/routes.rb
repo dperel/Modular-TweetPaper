@@ -1,4 +1,7 @@
 Frontpage::Engine.routes.draw do
   resources :articles
-  root '/frontpage/articles'
+
+  get 'frontpage/articles' => 'articles#index'
+
+  root 'frontpage#index'
 end
