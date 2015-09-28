@@ -1,5 +1,13 @@
-<%= current_user.name%>'s Front Page
+<div class="nav">
+<h3>Signed in as <%=current_user.name%>
+   |  Want Fresh News? <%= link_to("Refresh your Paper", '/refresh', :method => :get)%><br />
+</h3>
+</div>
+<%= render "form" %>
 
-<% if @article %>
-<%=@article.title %>
-<%end%> 
+<div class="headlineImage"><%= image_tag 'font3.png' %>
+</div>
+
+
+
+<%= render "articles" %>

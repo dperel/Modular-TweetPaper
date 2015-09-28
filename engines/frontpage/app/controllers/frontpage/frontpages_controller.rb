@@ -21,8 +21,7 @@ module Frontpage
   end
 
   def index
-    binding.pry
-    @articles = Article.where(user_id = current_user.id)
+    @articles = SessionsController::Article.where(user_id = current_user.id)
   end
 
   def refresh
