@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get '/auth/:provider/callback', to: 'sessions#create'
   # You can have the root of your site routed with "root"
    root 'sessions#index'
-
+   mount Frontpage::Engine => "/frontpage", as: 'frontpage'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

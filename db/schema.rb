@@ -11,7 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150928152139) do
+ActiveRecord::Schema.define(version: 20150928190025) do
+
+  create_table "frontpage_frontpages", force: :cascade do |t|
+    t.string   "title"
+    t.string   "tweet_1"
+    t.string   "tweet_2"
+    t.string   "tweet_3"
+    t.string   "tweet_4"
+    t.string   "tweet_5"
+    t.string   "picture_url"
+    t.integer  "user_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "provider"
