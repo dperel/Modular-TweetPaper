@@ -2,20 +2,20 @@
 
 one:
   title: MyString
+  picture_url: MyString
   tweet_1: MyString
   tweet_2: MyString
   tweet_3: MyString
-  tweet_4: MyString
+  tweet_4_string: MyString
   tweet_5: MyString
-  picture_url: MyString
   user_id: 1
 
 two:
   title: MyString
+  picture_url: MyString
   tweet_1: MyString
   tweet_2: MyString
   tweet_3: MyString
-  tweet_4: MyString
+  tweet_4_string: MyString
   tweet_5: MyString
-  picture_url: MyString
   user_id: 1

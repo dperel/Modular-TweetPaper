@@ -1,7 +1,7 @@
 require 'test_helper'
 
 module Frontpage
-  class FrontpagesControllerTest < ActionController::TestCase
+  class ArticlesControllerTest < ActionController::TestCase
     setup do
       @routes = Engine.routes
     end

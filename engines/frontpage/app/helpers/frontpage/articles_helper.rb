@@ -1,4 +1,4 @@
 module Frontpage
-  module FrontpagesHelper
+  module ArticlesHelper
   end
 end
