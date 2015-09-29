@@ -1,6 +1,6 @@
 <div class="nav">
 <h3>Signed in as <%=current_user.name%>
-   |  Want Fresh News? <%= link_to("Refresh your Paper", '/refresh', :method => :get)%><br />
+   |  Want Fresh News? <%= link_to("Refresh your Paper", frontpage_refresh_path, :method => :get)%><br />
 </h3>
 </div>
 <%= render "form" %>

@@ -26,8 +26,9 @@ module Frontpage
     end
 
   def refresh
-    current_user.articles.map do |article|
-      SessionsController::Article.refresh(article, current_user)
+    old_articles = SessionsController::Article.where(user_id = current_user.id)
+    old_articles.map do |article|
+      Frontpage::Article.refresh(article, current_user)
     end
     @articles = SessionsController::Article.where(user_id = current_user.id)
     render "index"
