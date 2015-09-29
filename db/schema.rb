@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150928211628) do
+ActiveRecord::Schema.define(version: 20150929211751) do
 
   create_table "articles", force: :cascade do |t|
     t.string   "title"
@@ -24,6 +24,27 @@ ActiveRecord::Schema.define(version: 20150928211628) do
     t.integer  "user_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+  end
+
+  create_table "clippings", force: :cascade do |t|
+    t.string   "title"
+    t.string   "tweet"
+    t.integer  "user_id_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "frontpage_articles", force: :cascade do |t|
+    t.string   "title"
+    t.string   "picture_url"
+    t.string   "tweet_1"
+    t.string   "tweet_2"
+    t.string   "tweet_3"
+    t.string   "tweet_4_string"
+    t.string   "tweet_5"
+    t.integer  "user_id"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
   end
 
   create_table "users", force: :cascade do |t|

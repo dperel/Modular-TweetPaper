@@ -1,4 +1,10 @@
 PATH
+  remote: engines/archive
+  specs:
+    archive (0.0.1)
+      rails (~> 4.2.4)
+
+PATH
   remote: engines/frontpage
   specs:
     frontpage (0.0.1)
@@ -191,6 +197,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  archive!
   byebug
   coffee-rails (~> 4.1.0)
   figaro
