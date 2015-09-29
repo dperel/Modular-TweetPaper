@@ -1,6 +1,8 @@
+require File.join(Rails.root, "app", "models", "article")
+require File.join(Rails.root, "app", "controllers", "sessions_controller")
+
 module Frontpage
   class Article < ActiveRecord::Base
-
     def self.populate(article_params, current_user)
       establish_client(current_user)
       @article = SessionsController::Article.new()

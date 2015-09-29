@@ -3,6 +3,7 @@ require_dependency "frontpage/application_controller"
 module Frontpage
   class ArticlesController < ApplicationController
 
+
     def new
     @article = SessionsController::Article.new
     end
@@ -10,7 +11,7 @@ module Frontpage
     def create
       Frontpage::Article.populate(article_params, current_user)
       @articles = SessionsController::Article.where(user_id = current_user.id)
-      @article = SessionsController::Article.last 
+      @article = SessionsController::Article.last
     end
 
 
