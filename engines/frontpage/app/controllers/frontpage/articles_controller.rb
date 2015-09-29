@@ -1,18 +1,16 @@
-require_dependency "frontpage/application_controller"
-require File.join(Rails.root, "app", "models", "article")
-require File.join(Rails.root, "app", "controllers", "sessions_controller")
-
 
 module Frontpage
   class ArticlesController < ApplicationController
+    before_action :establish_connection
+
     def new
-    @article = SessionsController::Article.new
+    @article = Article.new
     end
 
     def create
-      Frontpage::Article.populate(article_params, current_user)
-      @articles = SessionsController::Article.where(user_id = current_user.id)
-      @article = SessionsController::Article.last
+      @article = Article.new
+      @article.send :populate, article_params, current_user
+      @articles = Article.where(user_id = current_user.id)
       render "index"
     end
 
@@ -21,8 +19,7 @@ module Frontpage
     end
 
     def index
-      @article = SessionsController::Article.new
-      @articles = SessionsController::Article.all
+      @articles = Article.all
     end
 
   def refresh
@@ -45,9 +42,12 @@ module Frontpage
   private
 
   def article_params
-    params.permit(:title, :id)
+    params.permit(:title, :utf8, :commit, :authenticity_token)
   end
 
+  def establish_connection
+    Article.connection
+  end
 
   end
 end
