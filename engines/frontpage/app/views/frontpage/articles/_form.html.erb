@@ -1,6 +1,6 @@
 <div class="form">
 <h3>Add a new article</h3>
-<%= form_tag(:id=>"newForm") do %>
+<%= form_tag("/frontpage/articles", :id=>"newForm") do %>
 <%= label_tag(:title, "Subject:")%><br />
 <%= text_field_tag(:title) %>
 <%= submit_tag("Add Article", :id =>"submit")%>

@@ -1,9 +1,10 @@
 require_dependency "frontpage/application_controller"
+require File.join(Rails.root, "app", "models", "article")
+require File.join(Rails.root, "app", "controllers", "sessions_controller")
+
 
 module Frontpage
   class ArticlesController < ApplicationController
-
-
     def new
     @article = SessionsController::Article.new
     end
@@ -12,8 +13,12 @@ module Frontpage
       Frontpage::Article.populate(article_params, current_user)
       @articles = SessionsController::Article.where(user_id = current_user.id)
       @article = SessionsController::Article.last
+      render "index"
     end
 
+    def show
+      binding.pry
+    end
 
     def index
       @article = SessionsController::Article.new
@@ -25,21 +30,21 @@ module Frontpage
       SessionsController::Article.refresh(article, current_user)
     end
     @articles = SessionsController::Article.where(user_id = current_user.id)
-    render :index
+    render "index"
   end
 
 
   def destroy
     SessionsController::Article.destroy(params[:id])
     @articles = SessionsController::Article.where(user_id = current_user.id)
-    render :index
+    render "index"
   end
 
 
   private
 
   def article_params
-    params.permit(:title)
+    params.permit(:title, :id)
   end
 
 
