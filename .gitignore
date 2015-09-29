@@ -1,2 +1,5 @@
 /secrets.yml
 /application.yml
+
+# Ignore application configuration
+/config/application.yml
