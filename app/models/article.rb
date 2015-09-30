@@ -12,8 +12,6 @@ class Article < ActiveRecord::Base
 
     #assign the tweet attributes to the Article object
 
-    binding.pry
-
     @article.title = article_params["title"]
     if (results[0] && results[0].media?)
       @article.picture_url = results[0].media[0].to_hash[:media_url]

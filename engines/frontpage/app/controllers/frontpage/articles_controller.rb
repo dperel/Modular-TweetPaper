@@ -38,11 +38,17 @@ module Frontpage
     render "index"
   end
 
+  def star
+    binding.pry
+    Clipping.connection
+    @clipping = Clipping.new
+    @clipping.send :populate, article_params, current_user
+  end
 
   private
 
   def article_params
-    params.permit(:title, :utf8, :commit, :authenticity_token)
+    params.permit(:title, :utf8, :commit, :authenticity_token, :format)
   end
 
   def establish_connection

@@ -1,2 +1,18 @@
-Signed in as <%=current_user.name%><br />
-<%=link_to "See your articles", '/frontpage/articles'%>
+<div class="nav">
+<h3>Signed in as <%=current_user.name%>
+</h3>
+</div>
+<div id="title">
+  <h1>TweetPaper Home</h1>
+  <img src="" />
+</div>
+<div id="links">
+  <table>
+    <tr>
+      <td>
+        <p><%=link_to "My TweetPaper", '/frontpage/articles'%></p>
+        <p><%=link_to "My Saved Articles", '/archive/clippings'%></p>
+      </td>
+    </tr>
+  </table>
+</div>

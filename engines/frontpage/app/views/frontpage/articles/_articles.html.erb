@@ -5,11 +5,14 @@
         <%if article.picture_url %>
           <p><%= image_tag article.picture_url %></p>
         <%end%>
-      <p><%= article.tweet_1 %></p>
-      <p><%= article.tweet_2 %></p>
-      <p><%= article.tweet_3 %></p>
-      <p><%= article.tweet_4 %></p>
-      <p><%= article.tweet_5 %></p>
+
+      <p><%= article.tweet_1 %> <%= link_to("Star",star_article_path(article))%><br /></p>
+      <p><%= article.tweet_2 %> <%= link_to("Star", star_article_path)%><br /></p>
+      <p><%= article.tweet_3 %> <%= link_to("Star", star_article_path)%><br /></p>
+      <p><%= article.tweet_4 %> <%= link_to("Star", star_article_path)%><br /></p>
+      <p><%= article.tweet_5 %> <%= link_to("Star", star_article_path)%><br /></p>
       <%= link_to("Delete section", article_path(article), :method => :delete)%><br />
+
     </div>
   <%end%>
+</div>
