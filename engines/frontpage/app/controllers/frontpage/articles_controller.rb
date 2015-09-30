@@ -25,24 +25,25 @@ module Frontpage
   def refresh
     old_articles = SessionsController::Article.where(user_id = current_user.id)
     old_articles.map do |article|
-      Frontpage::Article.refresh(article, current_user)
+      Article.refresh(article, current_user)
     end
-    @articles = SessionsController::Article.where(user_id = current_user.id)
+    @articles = Article.where(user_id = current_user.id)
     render "index"
   end
 
 
   def destroy
-    SessionsController::Article.destroy(params[:id])
-    @articles = SessionsController::Article.where(user_id = current_user.id)
+    Article.destroy(params[:id])
+    @articles = Article.where(user_id = current_user.id)
     render "index"
   end
 
   def star
-    binding.pry
     Clipping.connection
     @clipping = Clipping.new
-    @clipping.send :populate, article_params, current_user
+    @clipping.send :make, params, current_user
+    @articles = Article.where(user_id = current_user.id)
+    render "index"
   end
 
   private

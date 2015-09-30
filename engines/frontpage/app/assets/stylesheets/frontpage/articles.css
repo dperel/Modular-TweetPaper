@@ -2,6 +2,13 @@ body {
   width: 1200px;
 }
 
+a:link {
+    color: grey;
+}
+a:visited {
+    color: darkgrey;
+}
+
 div.form {
   width: 200px;
   float:left;
