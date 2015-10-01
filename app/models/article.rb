@@ -1,4 +1,6 @@
 class Article < ActiveRecord::Base
+  validates :title, :picture_url, presence: true
+  belongs_to :user
 
   def populate(article_params, current_user)
     @article = Article.new

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150929211751) do
+ActiveRecord::Schema.define(version: 20151001140021) do
 
   create_table "articles", force: :cascade do |t|
     t.string   "title"
@@ -21,15 +21,15 @@ ActiveRecord::Schema.define(version: 20150929211751) do
     t.string   "tweet_4"
     t.string   "tweet_5"
     t.string   "picture_url"
-    t.integer  "user_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.integer  "user_id"
   end
 
   create_table "clippings", force: :cascade do |t|
     t.string   "title"
     t.string   "tweet"
-    t.integer  "user_id_id"
+    t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
