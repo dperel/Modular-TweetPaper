@@ -1,3 +1,9 @@
-Archive
-<br> 
-<%=@clippings%>
+<div class="nav">
+  <h3>Archive</h3>
+</div>
+<br>
+<div id="clippings-box">
+  <%@clippings.map do |clipping|%>
+    <%=clipping.title%> | <%=clipping.tweet%>
+  <%end%>
+</div>

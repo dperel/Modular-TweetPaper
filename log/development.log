@@ -43610,3 +43610,379 @@ Migrating to RenameUserIdid (20151001140021)
   [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151001140021"]]
   [1m[35m (2.8ms)[0m  commit transaction
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for ::1 at 2015-10-01 10:16:42 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/davidperel/Code/tweetpaper3/Modular-TweetPaper/app/views/sessions/index.html.erb:10: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+...buffer.append=(if current_user);@output_buffer.safe_append='
+...                               ^
+/Users/davidperel/Code/tweetpaper3/Modular-TweetPaper/app/views/sessions/index.html.erb:21: syntax error, unexpected keyword_end, expecting ')'
+/Users/davidperel/Code/tweetpaper3/Modular-TweetPaper/app/views/sessions/index.html.erb:23: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/davidperel/Code/tweetpaper3/Modular-TweetPaper/app/views/sessions/index.html.erb:25: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/sessions/index.html.erb:10: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+  app/views/sessions/index.html.erb:21: syntax error, unexpected keyword_end, expecting ')'
+  app/views/sessions/index.html.erb:23: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/sessions/index.html.erb:25: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.6ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.3ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (199.6ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (49.2ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (121.4ms)
+
+
+Started GET "/" for ::1 at 2015-10-01 10:16:42 -0400
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/davidperel/Code/tweetpaper3/Modular-TweetPaper/app/views/sessions/index.html.erb:10: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+...buffer.append=(if current_user);@output_buffer.safe_append='
+...                               ^
+/Users/davidperel/Code/tweetpaper3/Modular-TweetPaper/app/views/sessions/index.html.erb:21: syntax error, unexpected keyword_end, expecting ')'
+/Users/davidperel/Code/tweetpaper3/Modular-TweetPaper/app/views/sessions/index.html.erb:23: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/davidperel/Code/tweetpaper3/Modular-TweetPaper/app/views/sessions/index.html.erb:25: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/sessions/index.html.erb:10: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+  app/views/sessions/index.html.erb:21: syntax error, unexpected keyword_end, expecting ')'
+  app/views/sessions/index.html.erb:23: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/sessions/index.html.erb:25: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.8ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (55.4ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (36.3ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (80.0ms)
+
+
+Started GET "/" for ::1 at 2015-10-01 10:16:57 -0400
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <div class="nav">
+    2: <h3>Signed in as <%=current_user.name%>
+    3: </h3>
+    4: </div>
+    5: <div id="title">
+  app/views/sessions/index.html.erb:2:in `_app_views_sessions_index_html_erb__402384172698849116_70198332659540'
+
+
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (51.5ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (36.0ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (79.9ms)
+
+
+Started GET "/" for ::1 at 2015-10-01 10:17:53 -0400
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/davidperel/Code/tweetpaper3/Modular-TweetPaper/app/views/sessions/index.html.erb:26: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/sessions/index.html.erb:26: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (43.9ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (37.5ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (84.4ms)
+
+
+Started GET "/" for ::1 at 2015-10-01 10:18:14 -0400
+Processing by SessionsController#index as HTML
+  Rendered sessions/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 384ms (Views: 383.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/clippings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-01 10:18:14 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-10-01 10:18:14 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-01 10:18:14 -0400
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-01 10:18:14 -0400
+
+
+Started GET "/assets/frontpages.self-38fbc81ccb92dbe015a1b0fb6d2aec419f26032ff2ff9228633e3b0bceedcf1c.css?body=1" for ::1 at 2015-10-01 10:18:14 -0400
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-01 10:18:14 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-01 10:18:14 -0400
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-01 10:18:14 -0400
+
+
+Started GET "/assets/clippings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-01 10:18:14 -0400
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-01 10:18:14 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-01 10:18:14 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-10-01 10:18:15 -0400
+
+
+Started GET "/auth/twitter" for ::1 at 2015-10-01 10:18:18 -0400
+
+
+Started GET "/auth/twitter" for ::1 at 2015-10-01 10:18:18 -0400
+
+
+Started GET "/auth/twitter/callback?oauth_token=YB-q7AAAAAAAhznkAAABUCPEk1A&oauth_verifier=mPeKg483pcFYYf4DjvahhML0tNqf2BT2" for ::1 at 2015-10-01 10:18:19 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"YB-q7AAAAAAAhznkAAABUCPEk1A", "oauth_verifier"=>"mPeKg483pcFYYf4DjvahhML0tNqf2BT2", "provider"=>"twitter"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["provider", "twitter"], ["uid", "3241893952"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 40ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2015-10-01 10:18:20 -0400
+Processing by SessionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered sessions/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 77ms (Views: 76.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-10-01 10:18:50 -0400
+Processing by SessionsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered sessions/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 75ms (Views: 73.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/clippings.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-01 10:18:50 -0400
+
+
+Started GET "/assets/frontpages.self-38fbc81ccb92dbe015a1b0fb6d2aec419f26032ff2ff9228633e3b0bceedcf1c.css?body=1" for ::1 at 2015-10-01 10:18:50 -0400
+
+
+Started GET "/assets/articles.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-01 10:18:50 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-10-01 10:18:50 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-10-01 10:18:50 -0400
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-10-01 10:18:50 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-10-01 10:18:50 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-10-01 10:18:50 -0400
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-01 10:18:50 -0400
+
+
+Started GET "/assets/clippings.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-01 10:18:50 -0400
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-10-01 10:18:50 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-10-01 10:18:50 -0400
+
+
+Started GET "/frontpage/articles" for ::1 at 2015-10-01 10:18:52 -0400
+Processing by Frontpage::ArticlesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered engines/frontpage/app/views/frontpage/articles/_form.html.erb (1.1ms)
+  [1m[35mArticle Load (0.3ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered engines/frontpage/app/views/frontpage/articles/_articles.html.erb (10.2ms)
+  Rendered engines/frontpage/app/views/frontpage/articles/index.html.erb within layouts/application (42.4ms)
+Completed 200 OK in 91ms (Views: 89.4ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/frontpage/articles/68" for ::1 at 2015-10-01 10:18:55 -0400
+Processing by Frontpage::ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ytfFi8Gq3hfFaomFiOdAZDLcWTY9MHg6cPwRpSaRQsmcHyYyqXUTXd5aq5h5fHQkhQB+/R8bVH5tK6Zdr05u9A==", "id"=>"68"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 68]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 68]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered engines/frontpage/app/views/frontpage/articles/_form.html.erb (0.7ms)
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles" WHERE (1)
+  Rendered engines/frontpage/app/views/frontpage/articles/_articles.html.erb (2.5ms)
+  Rendered engines/frontpage/app/views/frontpage/articles/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 62ms (Views: 55.8ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/frontpage/articles" for ::1 at 2015-10-01 10:18:59 -0400
+Processing by Frontpage::ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IQvwvfNEoic/1XbKXIbhfrJec4XfyhCXy2yzah0SulV3wxMEm5tvbSTlVNetHdU+BYJUTv3hPNPWuwSSlM2WaA==", "title"=>"News", "commit"=>"Add Article"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "articles" ("title", "picture_url", "tweet_1", "tweet_2", "tweet_3", "tweet_4", "tweet_5", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "News"], ["picture_url", "http://www.tbp.org/Images/Logos/twitter-bird-blue-on-whiteSMALL.png"], ["tweet_1", "Real_Liam_Payne: #breaking news my curtains are currently throwing shade at me... Should I be worried😁"], ["tweet_2", "billboard: Watch @JustinBieber perform his newest music on \"Bieber Island\" in Australia http://t.co/EDyKez45jg"], ["tweet_3", "BR_NBA: Los Angeles Lakers are reportedly Kevin Durant’s “primary landing spot” in 2016 free agency http://t.co/gzjVFyrIUg http://t.co/aoGyQ3pi6H"], ["tweet_4", "livedoornews: 【朗報】Twitter、140文字制限の撤廃を検討中？\nhttp://t.co/cMOvwWZEUG\n\n「140文字制限をなくして、より長い文章をツイート可能にする計画を進めている」と複数の関係者が証言しているとのこと。 http://t.co/GzWV2vDr2W"], ["tweet_5", "danielsahyounie: In other news I might have a bath"], ["user_id", 1], ["created_at", "2015-10-01 14:19:00.422822"], ["updated_at", "2015-10-01 14:19:00.422822"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  Rendered engines/frontpage/app/views/frontpage/articles/_form.html.erb (0.3ms)
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (1)[0m
+  Rendered engines/frontpage/app/views/frontpage/articles/_articles.html.erb (2.1ms)
+  Rendered engines/frontpage/app/views/frontpage/articles/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 951ms (Views: 64.4ms | ActiveRecord: 3.7ms)
+
+
+Started DELETE "/frontpage/articles/74" for ::1 at 2015-10-01 10:19:10 -0400
+Processing by Frontpage::ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"8JaJw124VPeoPdtxkJ3lmqKPCuBDcbt/hZZge3BCbCumXmp6NWeZvbMN+WxhBtHaFVMtK2FalzuYQdeD+Z1AFg==", "id"=>"74"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 74]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "articles" WHERE "articles"."id" = ?  [["id", 74]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered engines/frontpage/app/views/frontpage/articles/_form.html.erb (0.3ms)
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (1)[0m
+  Rendered engines/frontpage/app/views/frontpage/articles/_articles.html.erb (1.7ms)
+  Rendered engines/frontpage/app/views/frontpage/articles/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 60ms (Views: 54.4ms | ActiveRecord: 3.2ms)
+
+
+Started DELETE "/frontpage/articles/64" for ::1 at 2015-10-01 10:19:13 -0400
+Processing by Frontpage::ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"2kvymAl9h5lbyFhifIgtx7uNDlp9v3qNRK1e0iKR8keMgxEhYaJK00D4en+NExmHDFEpkV+UVslZeukqq07eeg==", "id"=>"64"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 64]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "articles" WHERE "articles"."id" = ?  [["id", 64]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered engines/frontpage/app/views/frontpage/articles/_form.html.erb (0.4ms)
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (1)[0m
+  Rendered engines/frontpage/app/views/frontpage/articles/_articles.html.erb (1.3ms)
+  Rendered engines/frontpage/app/views/frontpage/articles/index.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 61ms (Views: 56.1ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/frontpage/articles" for ::1 at 2015-10-01 10:19:34 -0400
+Processing by Frontpage::ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nM4kIHWsBwlDLdr0cqbfW5rhBimZQYa1ASE7ApaeZ4fKBseZHXPKQ1gd+OmDPesbLT0h4rtqqvEc9oz6H0FLug==", "title"=>"New York City", "commit"=>"Add Article"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "articles" ("title", "picture_url", "tweet_1", "tweet_2", "tweet_3", "tweet_4", "tweet_5", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["title", "New York City"], ["picture_url", "http://www.tbp.org/Images/Logos/twitter-bird-blue-on-whiteSMALL.png"], ["tweet_1", "theblaze: Commentary: Muslim Brotherhood extremists attack journalists on the streets of New York City: http://t.co/ApEH4hOUfe"], ["tweet_2", "tomwaits: Watch Tom Waits' 1988 interview reimagined by the animation team for PBS @blankonblank series http://t.co/93SsVE0K9P http://t.co/FoaAlwz53Y"], ["tweet_3", "Greenpeace: #Floods that used to hit New York City every 500 years now hit every 24 http://t.co/eaCc0aC0hX http://t.co/E2QgmCR718"], ["tweet_4", "HISTORY: The 1863 draft riots in New York City have been called the largest civil insurrection in U.S. #history. http://t.co/YBGruBLQHl"], ["tweet_5", "newscientist: Floods that hit New York City every 500 years now hit every 24 http://t.co/6x4jXLzRbh http://t.co/Ib1Cd4ysow #climatechange"], ["user_id", 1], ["created_at", "2015-10-01 14:19:36.429109"], ["updated_at", "2015-10-01 14:19:36.429109"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  Rendered engines/frontpage/app/views/frontpage/articles/_form.html.erb (0.3ms)
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles" WHERE (1)
+  Rendered engines/frontpage/app/views/frontpage/articles/_articles.html.erb (1.5ms)
+  Rendered engines/frontpage/app/views/frontpage/articles/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 1908ms (Views: 56.5ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/frontpage/articles" for ::1 at 2015-10-01 10:19:54 -0400
+Processing by Frontpage::ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1FTC4B6Q3/qA602zVMr2IgC3citdei7JzrjTI1K00JCCnCFZdk8SsJvbb66lUcJit2tV4H9RAo3Tb2Tb22v8rQ==", "title"=>"Hurricane", "commit"=>"Add Article"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "articles" ("title", "picture_url", "tweet_1", "tweet_2", "tweet_3", "tweet_4", "tweet_5", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Hurricane"], ["picture_url", "http://pbs.twimg.com/media/CQJnrJRVAAAiw4z.jpg"], ["tweet_1", "cnnbrk: #Joaquin becomes a hurricane, with maximum sustained winds of 75 mph. http://t.co/qr4MuzuZyL http://t.co/FITwK2e9U8"], ["tweet_2", "weatherchannel: Latest forecast has #Joaquin as a strong Cat. 2 #hurricane by the weekend, latest info here: http://t.co/uMLfQQKict http://t.co/UqnC30adxP"], ["tweet_3", "weatherchannel: BREAKING: Hurricane #Joaquin continues to strengthen and is now a major Category 3 hurricane with 115 mph winds: http://t.co/equczWQI7r"], ["tweet_4", "NASA: Our satellites capture data from Hurricane #Joaquin as it intensifies in the Atlantic Ocean: http://t.co/5MUARvyLmS http://t.co/wev2vvpBsM"], ["tweet_5", "weatherchannel: New @NASA satellite shows #Joaquin in 3D. How cool is this?!? #hurricane\nhttps://t.co/64yIFuulBq"], ["user_id", 1], ["created_at", "2015-10-01 14:19:54.859619"], ["updated_at", "2015-10-01 14:19:54.859619"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  Rendered engines/frontpage/app/views/frontpage/articles/_form.html.erb (0.2ms)
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (1)[0m
+  Rendered engines/frontpage/app/views/frontpage/articles/_articles.html.erb (3.0ms)
+  Rendered engines/frontpage/app/views/frontpage/articles/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 769ms (Views: 54.4ms | ActiveRecord: 3.8ms)
+
+
+Started DELETE "/frontpage/articles/75" for ::1 at 2015-10-01 10:20:07 -0400
+Processing by Frontpage::ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"LfwjPqyMWMgiZevb0OANCiqYEmq0OmkMvzT6RxgAm1B7NMCHxFOVgjlVycYhezlKnUQ1oZYRRUii402/kd+3bQ==", "id"=>"75"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 75]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "articles" WHERE "articles"."id" = ?  [["id", 75]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered engines/frontpage/app/views/frontpage/articles/_form.html.erb (0.4ms)
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE (1)[0m
+  Rendered engines/frontpage/app/views/frontpage/articles/_articles.html.erb (1.6ms)
+  Rendered engines/frontpage/app/views/frontpage/articles/index.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 62ms (Views: 56.1ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/frontpage/articles" for ::1 at 2015-10-01 10:20:13 -0400
+Processing by Frontpage::ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wPwpMZsz6Dnm/6cK1IZJZdCwyHWq8rPcgS+a0tOnxfqWNMqI8+wlc/3PhRclHX0lZ2zvvojZn5ic+C0qWnjpxw==", "title"=>"Asia", "commit"=>"Add Article"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "articles" ("title", "picture_url", "tweet_1", "tweet_2", "tweet_3", "tweet_4", "tweet_5", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["title", "Asia"], ["picture_url", "http://pbs.twimg.com/media/CQIBsuWWIAAaKTv.jpg"], ["tweet_1", "ONEOKROCK_japan: ONE OK ROCK 2016 \"35xxxv\" Asia Tour LIVE IN BANGKOK\nTicket is on sale from today!\nTicket: http://t.co/KQaG5uge3F http://t.co/0lQkJ3FFlD"], ["tweet_2", "JAPANBASKETBALL: 男子代表：【結果速報】第28回FIBA ASIA男子選手権大会　準々決勝\n\n■試合終了\n日本　○ 81-67 ●　カタール\nhttp://t.co/y82JmSnBaV\n\n※9大会ぶりベスト4進出！\n#go_hayabusa http://t.co/fMADk9lE98"], ["tweet_3", "USPacificFleet: #USSRonaldReagan arrives in #Japan as #USNavy's forward-deployed carrier http://t.co/362A7HSbj4 http://t.co/5gvw7hzrQD"], ["tweet_4", "BBCBreaking: Indian court sentences five people to death over 2006 Mumbai train blasts http://t.co/aBurSCiAp5"], ["tweet_5", "nytimes: A mob in India killed a 52-year-old man over rumors he slaughtered a cow and ate beef http://t.co/jGbQc8AJdM"], ["user_id", 1], ["created_at", "2015-10-01 14:20:13.981199"], ["updated_at", "2015-10-01 14:20:13.981199"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  Rendered engines/frontpage/app/views/frontpage/articles/_form.html.erb (0.3ms)
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles" WHERE (1)
+  Rendered engines/frontpage/app/views/frontpage/articles/_articles.html.erb (1.7ms)
+  Rendered engines/frontpage/app/views/frontpage/articles/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 891ms (Views: 65.5ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/frontpage/frontpage/star.77" for ::1 at 2015-10-01 10:20:22 -0400
+Processing by Frontpage::ArticlesController#star as 
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles" WHERE (77)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "clippings" ("title", "tweet", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "News"], ["tweet", "ABCFamily: BREAKING NEWS! @NickiMinaj is executive producing &amp; appearing in a new @ABCFamily comedy based on her life! http://t.co/nmEvsmqdzD"], ["created_at", "2015-10-01 14:20:22.798083"], ["updated_at", "2015-10-01 14:20:22.798083"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  Rendered engines/frontpage/app/views/frontpage/articles/_form.html.erb (0.8ms)
+  [1m[35mArticle Load (0.4ms)[0m  SELECT "articles".* FROM "articles" WHERE (1)
+  Rendered engines/frontpage/app/views/frontpage/articles/_articles.html.erb (3.1ms)
+  Rendered engines/frontpage/app/views/frontpage/articles/index.html.erb within layouts/application (67.9ms)
+Completed 200 OK in 167ms (Views: 154.9ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/" for ::1 at 2015-10-01 10:20:37 -0400
+Processing by SessionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered sessions/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 47ms (Views: 46.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/archive/clippings" for ::1 at 2015-10-01 10:20:39 -0400
+Processing by Archive::ClippingsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered engines/archive/app/views/archive/clippings/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 58ms (Views: 57.1ms | ActiveRecord: 0.1ms)

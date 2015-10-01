@@ -1,11 +1,15 @@
 <div class="nav">
-<h3>Signed in as <%=current_user.name%>
-</h3>
+<%if current_user%>
+<h3>Signed in as <%=current_user.name%></h3>
+<%else%>
+<h3>You are not signed in</h3> | <p><%=link_to "Sign in with Twitter", '/auth/twitter'%></p>
+<%end%>
 </div>
 <div id="title">
   <h1>TweetPaper Home</h1>
   <img src="" />
 </div>
+<%if current_user%>
 <div id="links">
   <table>
     <tr>
@@ -16,3 +20,4 @@
     </tr>
   </table>
 </div>
+<%end%>
